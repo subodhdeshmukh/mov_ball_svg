@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.buttons{
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 20vh;
+    margin:8px  auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.buttons div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.buttons .btn{
+    padding: 10px 30px;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 18px;
+    background-color: rgb(39, 39, 39);
+}
+
+.buttons .btn:hover{
+    background-color: black;
+    transform: scale(1.05);
+}
+
+.buttons .reset{
+    position: relative;
+  background-image: linear-gradient(
+    to right,
+    hsl(211, 100%, 50%),
+    hsl(179, 100%, 30%)
+  );
+  z-index: 1;
+  border-radius: 50px;
+}
+
+.buttons .reset::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to bottom,
+      hsl(344, 100%, 50%),
+      hsl(31, 100%, 40%)
+    );
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  border-radius: 50px;
+
+  }
+
+.buttons .reset:hover::before {
+    opacity: 1;
+  /* border-radius: 50px; */
+
+  }
+
+/* svg */
+svg{
+    border: 5px solid rgb(255, 132, 132);
+    width: 910px;
+    height: 510px;
+    margin:0 0px 0 200px;
+}
+
+#circle{
+    fill:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
